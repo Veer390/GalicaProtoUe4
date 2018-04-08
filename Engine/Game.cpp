@@ -5,7 +5,7 @@
 Game::Game(MainWindow& wnd)
 	:
 	wnd(wnd),
-	gfx(wnd),
+	gfx(wnd)
 	
 {
 }
@@ -20,7 +20,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	gfx.DrawTexture(10, 10);
+	
 }
 
 void Game::ComposeFrame()
