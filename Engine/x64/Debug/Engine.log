@@ -1,10 +1,2 @@
-﻿  compilation header save succeeded; see T:\Visual Studio Projects\GalicaProtoUe4\Engine\FramebufferPS.shh
-  compilation header save succeeded; see T:\Visual Studio Projects\GalicaProtoUe4\Engine\FramebufferVS.shh
-  DXErr.cpp
-  Game.cpp
-  Graphics.cpp
-  Keyboard.cpp
-  Main.cpp
-  MainWindow.cpp
-  Mouse.cpp
+﻿  Game.cpp
   Engine.vcxproj -> T:\Visual Studio Projects\GalicaProtoUe4\x64\Debug\Engine.exe

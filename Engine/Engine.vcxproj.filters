@@ -16,6 +16,15 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{8b6c92a8-f65d-451e-80e3-d65773602b92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GraphicsStuff">
+      <UniqueIdentifier>{3bcaef89-4e13-4cc0-b819-694f6ad78c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsStuff\Headers">
+      <UniqueIdentifier>{03059f5a-277e-4984-8bc1-d343e517b8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsStuff\SourceFiles">
+      <UniqueIdentifier>{57f30327-a0cd-4a77-982c-b656adc38278}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChiliWin.h">
@@ -57,6 +66,9 @@
     <ClInclude Include="GalicaMath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\GraphicsStuff\Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXErr.cpp">
@@ -79,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="Mouse.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Header Files\GraphicsStuff\SourceFiles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
