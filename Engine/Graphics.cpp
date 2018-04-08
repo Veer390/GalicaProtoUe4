@@ -25,6 +25,7 @@
 #include <assert.h>
 #include <string>
 #include <array>
+#include "texture.h"
 
 // Ignore the intellisense error "cannot open source file" for .shh files.
 // They will be created during the build sequence before the preprocessor runs.
@@ -314,6 +315,19 @@ void Graphics::PutPixel( int x,int y,Color c )
 	assert( y >= 0 );
 	assert( y < int( Graphics::ScreenHeight ) );
 	pSysBuffer[Graphics::ScreenWidth * y + x] = c;
+}
+
+void Graphics::DrawTexture(int x, int y, Texture & t)
+{
+	int width = t.GetWidth();
+	int height = t.GetHeight();
+	for (int sy = 0; sy <height ; sy++)
+	{
+		for (int sx = 0; sx <width; sx++)
+		{
+			PutPixel(x + sx, y + sy, t.GetPixel({ sx,sy }));
+		}
+	}
 }
 
 

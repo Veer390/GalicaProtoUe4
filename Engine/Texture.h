@@ -1,8 +1,11 @@
 #pragma once
-#include "Graphics.h"
+
+
 #include "Colors.h"
 #include "Vec2.h"
-
+#include <string>
+#include <fstream>
+#include <assert.h>
 
 class Texture
 {
@@ -15,6 +18,8 @@ public:
 	{
 		pPixels = new Color[width*height];
 	}
+	Texture(std::string filename);
+	
 
 
 private:

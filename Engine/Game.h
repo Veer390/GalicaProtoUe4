@@ -44,6 +44,7 @@ private:
 	/********************************/
 	/*  User Variables              */
 	Texture t;
+	Texture g;
 	bool boo = false;
 	/********************************/
 };

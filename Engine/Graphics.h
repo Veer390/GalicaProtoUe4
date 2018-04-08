@@ -19,10 +19,14 @@
 *	along with The Chili DirectX Framework.  If not, see <http://www.gnu.org/licenses/>.  *
 ******************************************************************************************/
 #pragma once
+#include "Texture.h"
 #include <d3d11.h>
 #include <wrl.h>
 #include "ChiliException.h"
+#include "Vec2.h"
 #include "Colors.h"
+
+
 
 class Graphics
 {
@@ -56,6 +60,7 @@ public:
 		PutPixel( x,y,{ unsigned char( r ),unsigned char( g ),unsigned char( b ) } );
 	}
 	void PutPixel( int x,int y,Color c );
+	void DrawTexture(int x, int y, Texture& t);
 	~Graphics();
 private:
 	Microsoft::WRL::ComPtr<IDXGISwapChain>				pSwapChain;
