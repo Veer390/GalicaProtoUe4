@@ -25,6 +25,9 @@
     <Filter Include="Header Files\GraphicsStuff\SourceFiles">
       <UniqueIdentifier>{57f30327-a0cd-4a77-982c-b656adc38278}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{98e1b095-d89b-4ede-b4e5-705a5ab69b50}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChiliWin.h">

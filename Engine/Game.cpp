@@ -6,8 +6,6 @@ Game::Game(MainWindow& wnd)
 	:
 	wnd(wnd),
 	gfx(wnd),
-	t(900, 900),
-	g("dib.bmp")
 	
 {
 }
@@ -22,12 +20,10 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	
+	gfx.DrawTexture(10, 10);
 }
 
 void Game::ComposeFrame()
 {
-	gfx.DrawTexture(10, 10, g);
-
-
+	
 }
