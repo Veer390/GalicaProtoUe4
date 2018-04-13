@@ -2,6 +2,21 @@
 #include "ChiliWin.h"
 
 
+Texture::Texture(const Texture & t)
+{
+	width = t.width;
+	height = t.height;
+	pPixels = new Color[width*height];
+
+	for (int i = 0; i < width; i++)
+	{
+		for (int j = 0; j < height; j++)
+		{
+			pPixels[width*j+i] = t.GetPixel({ i,j });
+		}
+	}
+}
+
 Texture::Texture(std::string filename)
 {
 	std::ifstream file(filename, std::ios::binary);
@@ -33,7 +48,7 @@ void Texture::PutPixel(vector loc, Color c)
 
 }
 
-Color Texture::GetPixel(vector loc)
+Color Texture::GetPixel(vector loc) const
 {
 	return pPixels[width*loc.y + loc.x];
 }

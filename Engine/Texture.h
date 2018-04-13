@@ -11,6 +11,7 @@ class Texture
 {
 
 public:
+	Texture(const Texture &t);
 	Texture(int width, int height)
 		:
 		width(width),
@@ -30,7 +31,7 @@ private:
 
 public:
 	void PutPixel(vector loc, Color c);
-	Color GetPixel(vector loc);
+	Color GetPixel(vector loc) const; 
 
 
 public:

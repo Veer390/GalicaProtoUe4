@@ -28,6 +28,12 @@
     <Filter Include="Images">
       <UniqueIdentifier>{98e1b095-d89b-4ede-b4e5-705a5ab69b50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Ships">
+      <UniqueIdentifier>{1f6db92e-7a75-4089-8781-332ab51ba15d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Weapons">
+      <UniqueIdentifier>{333a4105-b0b4-49d6-95fb-ad75f45645d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChiliWin.h">
@@ -75,6 +81,18 @@
     <ClInclude Include="Animation.h">
       <Filter>Header Files\GraphicsStuff\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="ShipBase.h">
+      <Filter>Header Files\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponBase.h">
+      <Filter>Header Files\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaggingSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXErr.cpp">
@@ -100,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Header Files\GraphicsStuff\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipBase.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

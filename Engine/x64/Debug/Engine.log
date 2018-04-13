@@ -1,3 +1,2 @@
-﻿  Game.cpp
-t:\visual studio projects\galicaprotoue4\engine\game.cpp(10): error C2512: 'Texture': no appropriate default constructor available
-  t:\visual studio projects\galicaprotoue4\engine\texture.h(11): note: see declaration of 'Texture'
+﻿  ShipBase.cpp
+  Engine.vcxproj -> T:\Visual Studio Projects\GalicaProtoUe4\x64\Debug\Engine.exe
